@@ -238,7 +238,7 @@ async function getAccountByEmail (account_email) {
     <li><strong>Line 4 - </strong> creates the function, makes it asyncronous, and adds the client_email as a parameter.</li>
     <li><strong>Line 5 - </strong> begins a try - catch block.</li>
     <li><strong>Line 6 - </strong> creates a variable to store the results of the query.</li>
-    <li><strong>Line 7 - </strong> a SQL SELECT query using the prepared statement syntax. This is the first argument in the pool.query function.</li>
+    <li><strong>Line 7 - </strong> a SQL SELECT query using the parameterized statement syntax. This is the first argument in the pool.query function.</li>
     <li><strong>Line 8 - </strong> passes in the client_email, as an array element to replace the placeholder at the end of the SQL statement. This is the second argument in the pool.query function. That function ends on this line.</li>
     <li><strong>Line 9 - </strong> sends the first record, from the result set returned by the query, back to where this function was called.</li>
     <li><strong>Line 10 - </strong> ends the "try" block and begins the "catch" block, with the "error" variable to store any errors that are thrown by the "try" block.</li>

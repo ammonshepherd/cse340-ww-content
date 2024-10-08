@@ -389,7 +389,7 @@ async function getInventoryByClassificationId(classification_id) {
                 <strong>Lines 6-12 -</strong> creates an SQL query to read the
                 inventory and classification information from their respective
                 tables using an INNER JOIN. The query is written using a
-                prepared statement. The "$1" is a placeholder, which will be
+                parameterized statement. The "$1" is a placeholder, which will be
                 replaced by the value shown in the brackets "[]" when the SQL
                 statement is run. The SQL is queried against the database via
                 the database pool. Note the <code class="language-javascript">await</code> keyword, which means this

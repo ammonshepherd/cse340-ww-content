@@ -97,7 +97,8 @@
             The Logs window will appear and show you what steps are occurring. In the middle of the screen you will see the date and time. To the right will be an indicator which will read "In progress". When done, this will change to "Failed" or "Live".
           </li>
           <li>
-            The "Live" option should have a green background, meaning "Success".
+            The "Live" option should have a green background, meaning "Success". <mark>Note: if a red Failure message appears, check to make sure your database and webservice are in the same region. You can do this by going to the Render dashboard. If a message 
+            indicating that SSL/TLS is required appears, you will need to edit your DATABASE_URL and add <span class="warning">?ssl=true</span> to the end of the URL you copied and pasted earlier.</mark> 
           </li>
           <li>As you have done previously, click the link below the service name to open to your application in a new tab.</li>
          
