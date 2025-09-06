@@ -9,3 +9,7 @@ All units have a suggested duration of two weeks. During week 1, the learning ac
 
 ## Base URL
 The base URL to access any materials in this repo is **https://byui-cse.github.io/cse340-ww-content/**
+
+
+# This fork
+This fork is accessible at [https://ammonshepherd.github.io/cse340-ww-content/](https://ammonshepherd.github.io/cse340-ww-content/)
