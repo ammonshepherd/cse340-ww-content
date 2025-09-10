@@ -20,23 +20,26 @@ body {
   font-size: 20px;
   line-height: 1.5;
 }
+header img {
+  width: 100%;
+}
 
 /* Overview docs */
 form h2+ul {
-      list-style: none outside;
-      padding-left: 20px;
-    }
+  list-style: none outside;
+  padding-left: 20px;
+}
 form input[type=checkbox]{
-      transform: scale(1.5);
-      margin-right: .5rem;
-    }
+  transform: scale(1.5);
+  margin-right: .5rem;
+}
 form textarea{
-      height: 5rem;
-      width: 75%;
-    }
+  height: 5rem;
+  width: 75%;
+}
 form[data-unit] label{
-      display: none;
-    }
+  display: none;
+}
 
 #wrapper {
   margin: 0 auto;
@@ -216,13 +219,23 @@ iframe {
 * Non-mobile Screens
 ***********************************/
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 880px) {
 
+  body{
+    background-color: #006eb6;
+    font-family:Verdana,Geneva,Tahoma,sans-serif;
+    font-size:20px;
+    line-height:1.5;
+    padding: 10px;
+  }
   #wrapper {
     max-width: 1300px;
     padding: 0 1rem;
     border: 1px solid lightgray;
-    box-shadow: 5px 0 3px lightgray, -5px 0 3px lightgray;
+    margin:auto;
+    border-radius: 4px;
+    background-color: white;
+    padding: 20px;
   }
 
   iframe {
