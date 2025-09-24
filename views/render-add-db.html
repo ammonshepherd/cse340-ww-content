@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Render App Server | Web Backend Development</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/cse340-ww-content/css/340course-min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/cse340-ww-content/css/prism-coy-dev.min.css" media="screen" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <img src="https://byui-cse.github.io/cse340-ww-content/images/small_banner.jpg" alt="Course Banner" />
+      </header>
+      <main>
+        <h2>Connect the Database Service</h2>
+        <p>
+            In a browser go to
+            <a href="https://render.com/" target="_blank">Render.com</a> and
+            sign-in using your GitHub credentials.
+        </p>
+        <p>
+          We can now connect the database to the web application.
+        </p>
+        <ol>
+          <li>While on the dashboard for the web application server, click the "Environment" item on the left side of the screen.</li>
+          <li>
+            Click the "Add Environment Variable" button.
+            <div class="callout">
+              <img src="https://byui-cse.github.io/cse340-ww-content/images/set-env-db-variable.png" alt="Screenshot of creating a new environment variable setting" />
+            </div>
+          </li>
+          <li>
+            Click in the "Key" text box and type 
+            "<code><mark>DATABASE_URL</mark></code>". 
+            <p>Also add this key to the .env file within
+            <span title="Visual Studio Code">Visual Studio Code</span>.</p>
+          </li>
+          <li>
+            Create the DATABASE URL using the information from the DATABASE
+            LOGIN INFO file and type it into the value field. It should be in
+            the format
+            <p>
+              <code>postgresql://username:password@143.198.247.195:5432/DatabaseName</code>
+            </p>
+            NOTE that the DatabaseName and username are actually the same. Your password is just
+            the numbers of your student ID.
+            <p>Also add this value to the .env file.</p>
+            <p>Your .env file should now have a line like this:</p>
+            <code>DATABASE_URL='postgresql://username:password@143.198.247.195:5432/DatabaseName'</code>
+          </li>
+          <li>Click the "Save Changes" button.</li>
+        </ol>
+      </main>
+      <footer>
+        <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en_US" ><img alt="Creative Commons License" style="border-width: 0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a>
+        All materials (except as noted) are by Blaine Robertson and licensed
+        under a
+        <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en_US" >Creative Commons Attribution-ShareAlike 3.0 License</a>.
+      </footer>
+    </div>
+    <script src="https://byui-cse.github.io/cse340-ww-content/js/prism-coy-dev.min.js"></script>
+  </body>
+</html>

@@ -52,6 +52,7 @@
           activity. This is the
           <a target="_blank" href="https://byui-cse.github.io/transcripts/render-web-service.txt" >Transcript</a> of the video.
         </p>
+        <p><mark>Ignore the part about connecting a database. That will be done next week.</mark></p>
         <iframe
           width="560"
           height="315"
@@ -137,7 +138,7 @@
           </li>
         </ol>
 
-        <h2>Connect the Database Service</h2>
+        <!-- <h2>Connect the Database Service</h2>
         <p>
           With the application created, the database server needs to be
           connected to it. Let's get this done next.
@@ -175,22 +176,28 @@
             <code>DATABASE_URL='postgresql://username:password@143.198.247.195:5432/DatabaseName'</code>
           </li>
           <li>Click the "Save Changes" button.</li>
-        </ol>
+        </ol> -->
 
-        <h2>Add A Second Environment Variable</h2>
+        <h2>Add An Environment Variable</h2>
         <p>
           As long as you're here, let's add an environment variable that will
           help our application to distinguish between our computer, where we
           develop, and the server, which is our production environment.
         </p>
         <ol>
-          <li>Click the "Add Environment Variable" button.</li>
+          <li>While on the dashboard for the web application server, click the "Environment" item on the left side of the screen.</li>
+          <li>
+            Click the "Add Environment Variable" button.
+            <div class="callout">
+              <img src="https://byui-cse.github.io/cse340-ww-content/images/set-env-db-variable.png" alt="Screenshot of creating a new environment variable setting" />
+            </div>
+          </li>
           <li>In the "Key" input, type <mark>NODE_ENV</mark>.</li>
           <li>In the "Value" input, type <mark>production</mark>.</li>
           <li>Click the "Save Changes" button.</li>
         </ol>
 
-        <h2>Add A Third Environment Variable</h2>
+        <h2>Add Another Environment Variable</h2>
         <p>
           The render.com web service developed a glitch in the Fall of 2023,
           which defaulted to an old version of Node for some reason. To fix the
