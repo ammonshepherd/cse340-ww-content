@@ -32,12 +32,12 @@
 
       <h2>Create the Type</h2>
       <ol>
-        <li>Open the connection to the Render.com database from pgAdmin.
+        <li>Open the connection to the remote database from pgAdmin.
           <ul>
             <li>Expand the Servers list (if needed)</li>
-            <li>Right-click on the Render connection</li>
+            <li>Right-click on the remote database connection</li>
             <li>Select "Connect to Server"</li>
-            <li>Be prepared to supply the password from the database connection information panel in the Render dashboard.</li>
+            <li>Be prepared to supply the password from the database connection information in the .env file or the DATABASE INFO file.</li>
           </ul>
         </li>
         <li>Expand the "Databases" item.</li>
@@ -85,7 +85,7 @@
       <h2>Close the Connection</h2>
       <p>As stated in the previous activity, it is recommended that when you are done with your interaction between pgAdmin and the database server that the connection be closed. To do so:</p>
       <ol>
-        <li>Right-click on the Render server object in the Servers panel of pgAdmin.</li>
+        <li>Right-click on the remote database server object in the Servers panel of pgAdmin.</li>
         <li>Select "Disconnect from Server".</li>
         <li>You're done.</li>
       </ol>

@@ -34,11 +34,11 @@
           is worth noting that the PostgreSQL server understands and will work with both.</p>
       
       <h2>Classification Table</h2>
-      <p>Inventory items (vehicles) fall into classifications: sedans, sports, SUV, utility, truck, etc... The <span class="fn">classification</span> table will contain fields to store vehicle classifications by name and unique id. As you did previously, use pgAdmin as the tool to interact with the database on Render.com.</p>
+      <p>Inventory items (vehicles) fall into classifications: sedans, sports, SUV, utility, truck, etc... The <span class="fn">classification</span> table will contain fields to store vehicle classifications by name and unique id. As you did previously, use pgAdmin as the tool to interact with the remote database.</p>
       <ol>
             <li>Launch pgAdmin and enter the master password.</li>
             <li>Expand the Servers list (if needed)</li>
-            <li>Right-click on the Render connection</li>
+            <li>Right-click on the remote database connection</li>
             <li>Select "Connect to Server"</li>
         <li>Expand the "Databases" item.</li>
         <li>Expand the 340 database item (you named this item).</li>
@@ -155,7 +155,7 @@ CREATE TABLE IF NOT EXISTS public.account
       <h2>Close the Connection</h2>
       <p>As stated in previous activities, it is recommended that when you are done with your interaction between pgAdmin and the database server that the connection be closed. To do so:</p>
       <ol>
-        <li>Right-click on the Render server object in the "Servers" panel of pgAdmin.</li>
+        <li>Right-click on the remote database server object in the "Servers" panel of pgAdmin.</li>
         <li>Select "Disconnect from Server".</li>
         <li>You're done.</li>
       </ol>
