@@ -82,14 +82,13 @@
 
       <h3>Task Two - Destroy and Rebuild the Database</h3>
 
-      <p>You should already be aware that Render.com removes free-tier databases after 30 days. Therefore, it is critical that you know how to restore your database when that happens. Task two requires you to go through the entire process manually, so you know how to do it again when the time comes. You will probably need to do this at least twice. Once to make sure you know the process and the second time to record a video of you doing so. The video should be <strong>less than four minutes in length</strong> - so you need to know exactly what you're doing.</p>
+      <p>When working with databases, something invariably happens that destroys your database or corrupts the data within. It is therefore critical that you know how to restore your database from scratch. Task two requires you to go through the entire process manually, so you know how to recreate your database if it were to be lost. Include the database restoration process in your video. The whole video should be <strong>less than four minutes in length</strong> - so you need to know exactly what you're doing.</p>
 
       <ol>
-        <li>Destroy the database service in the Render.com dashboard by clicking on the database service, scrolling to the bottom and clicking "Delete Database" and following the provided directions.</li>
-        <li>Create a new database following the directions from this unit as needed. <mark>The database name cannot be the same as the old one, but can be similar.</mark></li>
-        <li>Delete the existing connection to the remote database in the local tool: pgAdmin or SQLTools.</li>
-        <li>Create a new connection between the database and one of the local tools: pgAdmin or SQLTools.</li>
-        <li>Run the SQL code in your database rebuild file (you should already have all these queries stored in the database folder of your project), as a set of queries, run at the same time, to build the Type object, the three tables, and populate the classification and inventory tables. And, the copies of queries 4 and 6 from Task 1, should be run as the last items in the database rebuild file.</li>
+        <li>Destroy the tables in your database using pgAdmin.</li>
+        <li>Delete the existing connection to the remote database in pgAdmin.</li>
+        <li>Create a new connection between the database and pgAdmin.</li>
+        <li>Run the SQL code in your database rebuild file (you should already have all these queries stored in the database folder of your project) as a set of queries to build the Type object, the three tables, and populate the classification and inventory tables. Then run queries 4 and 6 from Task 1. These queries should be the last items in the database rebuild file.</li>
         <li>Show that the structures and data exist.</li>
       </ol>
       <h2>Submission</h2>
